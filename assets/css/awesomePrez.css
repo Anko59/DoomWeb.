@@ -1,0 +1,296 @@
+h1, p { 
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;}
+
+#home {color:#bbb;}
+
+.bckGrnd_A {background-color:#15AECA;}
+.bckGrnd_B {background-color:#A7DBD8;}
+.bckGrnd_C {background-color:#E0E4CC;}
+.bckGrnd_D {background-color:#F38630;}
+.bckGrnd_E {background-color:#FA6900;}
+.bckGrnd_W {background-color:#fff;}
+.bckGrnd_Grad {
+  background-color: #b6e0a8;
+
+   
+  /* Old browsers 
+
+background: -moz-linear-gradient(left,  #b6e0a8 0%, #629b30 50%, #fccd4d 50%, #fbdf93 100%); 
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b6e0a8), color-stop(50%,#629b30), color-stop(50%,#fccd4d), color-stop(100%,#fbdf93)); 
+background: -webkit-linear-gradient(left,  #b6e0a8 0%,#629b30 50%,#fccd4d 50%,#fbdf93 100%); 
+background: -o-linear-gradient(left,  #b6e0a8 0%,#629b30 50%,#fccd4d 50%,#fbdf93 100%); 
+background: -ms-linear-gradient(left,  #b6e0a8 0%,#629b30 50%,#fccd4d 50%,#fbdf93 100%); 
+background: linear-gradient(to right,  #b6e0a8 0%,#629b30 50%,#fccd4d 50%,#fbdf93 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6e0a8', endColorstr='#fbdf93',GradientType=1 );
+  */
+}
+
+.fa-2x {
+  color: #fff;
+}
+
+
+
+.page {
+  position: absolute;
+  padding:1em;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.page.center {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.page.right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.page.down {
+  -webkit-transform: translate(0, 100%);
+  transform:translate(0, 100%);
+}
+
+.page.up {-webkit-transform: translate(0, -85%);
+  transform: translate(0, -85%);}
+
+.page.transition {
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.next, .nextonly, .back, .more, .goUp,  .upOnly, .goDown {position:absolute; color:#15AECA; font-size:3em;}
+
+#homePage .home, #homePage .next, .nextonly, #homePage .back, #homePage .more {position:absolute; color:#fff; font-size:3em;}
+
+
+
+#home {top:25px; right:50px; z-index:1000; display:block; position:absolute; font-size:3em;}
+
+.people {
+/*height:100%; width: 400px;
+position:absolute; z-index:10000; bottom:25px;  margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0; display:block; */
+  background-image:url(https://static.tumblr.com/rhk4kgw/ZfWndyrai/hipsters.svg);
+  background-attachment: fixed;
+   background-repeat: no-repeat;
+    background-position: bottom center;
+  background-size: 75% 75%;
+}
+
+
+.next, .nextonly {bottom:50px; right:1.25em;}
+.goUp, .upOnly{bottom:50px; right:1.25em;}
+.back {bottom:50px; left:1.25em;}
+.goDown {bottom:50px; left:1.25em;}
+.more {bottom:50px; right:2.55em;}
+.centerV {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+article {
+  position:absolute;
+  top:4em;
+  bottom:7em;
+  width:80%;
+  left:30px;
+  overflow:hidden;
+}
+
+article.full {top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:100%;
+  overflow:auto;}
+
+article h1 {margin-top:0px; font-size:6vw;}
+
+article p {font-size:4vw;}
+
+.titleWrapper {font-size:200%;
+  width:90%;
+  margin:0 auto;
+}
+
+.titleWrapper h1 {margin-bottom:.25em; text-transform: uppercase; font-size: 10vw;}
+
+.titleWrapper h2 {margin-top:0em; font-size: 6vw; }
+.enter, .invis {visibility: hidden;}
+.hide {display:none;}
+
+h1 ul {margin: .25em 1em;}
+
+.bigFitText {font-size: 10vw;}
+.superFitText {}
+
+.smoothFadeIn {
+  animation-name: smoothFadeIn;
+	-webkit-animation-name: smoothFadeIn;	
+	animation-duration: .5s;	
+	-webkit-animation-duration: .5s;
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes smoothFadeIn {
+	0% {
+		opacity: 0.0;		
+	}
+
+	100% {
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes smoothFadeIn {
+	0% {
+		opacity: 0.0;		
+	}
+	100% {
+		opacity: 1;	
+	}		
+}
+
+
+
+
+ #homePage {
+    color: #fff;
+    background: url(https://unsplash.imgix.net/39/F9g2FiPUSyC7IybhyI2p_09.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=7e4e433bffbdf68583db15b1bb4e607c) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+ }
+
+ 
+
+#homePage .titleWrapper  { /*text-shadow: 0px 0px 20px rgba(255,255,255,.5);*/ }
+
+
+#p1 {
+  
+  /*
+    -webkit-filter: grayscale(100%);
+         filter: gray;*/
+  background: url(https://unsplash.imgix.net/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=73aab3431ca0110acfb5b980b251c71f) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  
+}
+
+#p1 article, #p2 article  {color:#fff;
+  text-shadow: 0px 0px 10px rgba(0,0,0,.75);}
+
+#p2 {
+  
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ), url(https://farm6.staticflickr.com/5544/14185539140_7a01cdbe31_b.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  
+}
+
+
+
+canvas{  
+  max-width: 100%;
+  height: 90%;
+  margin: 0;
+  margin-top:2em;
+  padding: 0;
+
+}
+
+#map-canvas {
+  position:relative;
+ max-width: 80%;
+  height:70%;
+  margin: 0;
+  margin-top:2em;
+  padding: 0; 
+  
+}
+
+#p4 article { top:6em;}
+
+/*Parallax*/
+.picture {
+	height: 100%;
+	width: 100%;
+}
+
+.picture .bkg {
+	height: 100%;
+	width: 100%;
+}
+
+.picture1 .bkg {
+	background: url(https://i.imgur.com/hAisNHb.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.picture2 .bkg {
+	background: url(https://i.imgur.com/QlrIHln.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.picture3 .bkg {
+	background: url(https://i.imgur.com/IGLzzUs.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+#video_background { 
+  position: absolute; 
+  bottom: 0px; 
+  right: 0px; 
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto; 
+  z-index: -1; 
+  overflow: hidden;
+   }
+
+#video_pattern { 
+ 
+   position: fixed; 
+   opacity: 0.8; 
+   left: 0px; 
+   top: 0px; 
+   width: 100%; 
+   height: 100%; 
+   z-index: -2;
+}

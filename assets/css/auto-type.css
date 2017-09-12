@@ -4,7 +4,7 @@
 
 /* Global */
 html{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .line-1{
     position: relative;

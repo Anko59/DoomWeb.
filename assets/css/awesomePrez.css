@@ -175,7 +175,7 @@ h1 ul {margin: .25em 1em;}
 
  #homePage {
     color: #fff;
-    background: url(https://unsplash.imgix.net/39/F9g2FiPUSyC7IybhyI2p_09.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=7e4e433bffbdf68583db15b1bb4e607c) no-repeat center center fixed; 
+    background: url(boreale.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -193,7 +193,7 @@ h1 ul {margin: .25em 1em;}
   /*
     -webkit-filter: grayscale(100%);
          filter: gray;*/
-  background: url(https://unsplash.imgix.net/38/awhCbhLqRceCdjcPQUnn_IMG_0249.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=73aab3431ca0110acfb5b980b251c71f) no-repeat center center fixed; 
+  background: url(moon.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -210,7 +210,7 @@ h1 ul {margin: .25em 1em;}
   background: linear-gradient(
       rgba(0, 0, 0, 0.25), 
       rgba(0, 0, 0, 0.25)
-    ), url(https://farm6.staticflickr.com/5544/14185539140_7a01cdbe31_b.jpg) no-repeat center center fixed; 
+    ), url(sun.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

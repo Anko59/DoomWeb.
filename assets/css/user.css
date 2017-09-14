@@ -25,3 +25,18 @@ body {
   transform: translate(-50%, -50%);
   z-index: 3;
 }
+.img_container{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 12%;
+
+}
+.img_displayer{
+  position: relative;
+  width: 100%;
+  opacity: 0.5;
+  height:100%;
+}

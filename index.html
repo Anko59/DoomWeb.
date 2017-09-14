@@ -7,21 +7,17 @@
     <title>DoomWeb</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/headline.css">
     <link rel="stylesheet" href="assets/css/stars.css">
     <link rel="stylesheet" href="assets/css/auto-type.css">
     <link rel="stylesheet" href="assets/css/greenMenu.css">
     <link rel="stylesheet" href="assets/css/burgerMenu.css">
-    <link rel="stylesheet" href="assets/bootstrap/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/carroussel.css">
     <script language="javascript" type="text/javascript" src="assets/js/main.js"></script>
     <meta name="viewport" content="initial-scale=1">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-    <link rel="stylesheet" href="http://www.justinaguilar.com/animations/css/animations.css">
-    <link rel="stylesheet" href="assets/css/awesomePrez.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZwlN_6QnUj3F-3DgguB4UuK2jgXEUfeQ&callback=initialize"></script>
+
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
     <nav class="burger">
@@ -55,60 +51,61 @@
         <div class="stars1"></div>
         <div class="stars2"></div>
         <div class="shooting-stars"></div>
-        </div class='img_container'>
-            <img src="assets/css/Logo.jpg" alt="Mountain View" class='img_displayer'>
+        </div>
+        <div class = 'animation-text'>
+            <svg viewbox="0 0 100 20">
+              <defs>
+                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="5%" stop-color="#326384"/>
+                  <stop offset="95%" stop-color="#123752"/>
+                </linearGradient>
+                <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                  <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                    <animateTransform
+                        attributeName="transform"
+                        begin="0s"
+                        dur="1.5s"
+                        type="translate"
+                        from="0,0"
+                        to="40,0"
+                        repeatCount="indefinite" />
+                  </path>
+                </pattern>
+              </defs>
+              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">DoomWeb</text>
+              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">DoomWeb</text>
+            </svg>
         </div>
         <p class="line-1 anim-typewriter">Des sites Web modernes à un prix abordable</p>
-
-    </div> 
-        <div id="homePage" class="bckGrnd_A page transition center">
-          <div class="titleWrapper">
-          <h1  data-event="#homePage h2">Découvrez nos offres</h1>
-          </div>
-
-
-            <a class="more" data-action="slideRight,#homePage h2"><i class="fa fa-plus-circle"></i></a>
-            <a class="next" data-nextPage="p1"><i class="fa fa-arrow-circle-right"></i></a>
-        </div> 
-
-
-
-        <div id="p1" class="bckGrnd_W page transition right">
-          <article>
-            <h1><span class="sldUp" data-event="#p1 h1 ul li:nth-child(1)">Sites vitrines:<span>
-                <br \>
-                <span class="sldUp" data-event="#p1 h1 ul li:nth-child(1)">Présentation de votre entreprise ou projet. Une mise en page moderne choisie avec vous.<span>
-            </h1>
-          </article>
-
-
-            <a class="more" data-action="slideUp,#p1 h1 ul li:nth-child(1),500;slideUp,#p1 h1 ul li:nth-child(2),500;slideUp,#p1 h1 ul li:nth-child(3),500"><i class="fa fa-plus-circle"></i></a>
-            <a class="back" data-prevPage="homePage"><i class="fa fa-arrow-circle-left"></i></a> 
-            <a class="next" data-nextPage="p2"><i class="fa fa-arrow-circle-right"></i></a>
         </div>
+        <div id ='carousselContainer'>
+            <ul id="caroussel">
+                <li class="active" style="background: url(assets/css/boreale.jpg) center center no-repeat;"><span class="lien">Nos Offres</span>
+                    <div class="headline">
+                        <div class="bg"> </div>
+                        <div class="overlay"></div>
+                        <div class="cheapwrap">
+                            <table class="cheaptricks">
+                            <tbody>
+                                <tr>
+                                <td>
+                                    <h1 id='nosOffres'>Slidez !</h1>
+                                <p id='slidez'>Pour découvrir nos offres</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                      </div>
+                </li>
+                <li class = "notMain" style="background: url(assets/css/moon.jpg) center center no-repeat;"><span class="lien">Site Vitrine</span></li>
+                <li class = "notMain" style="background: url(assets/css/sun.jpg) center center no-repeat;"><span class="lien">Site e-commerce</span></li> 
+            </ul>
 
+            <div id="subnav"></div>
 
-        <div id="p2" class="bckGrnd_W page transition right">
-          <article><h1 ><span class="sldUp" data-event="#p1 h1 ul li:nth-child(1)">Sites vitrines: Présentation de votre entreprise ou projet. Une mise en page moderne choisie avec vous.<span>
-          </h1></article>
-
-           <a class="more" data-action="shrinkText,#p2 article h1,1;fadeIn,#p2 article p,250"><i class="fa fa-plus-circle"></i></a>
-            <a class="back" data-prevPage="p1"><i class="fa fa-arrow-circle-left"></i></a>
-           <a class="next" data-nextPage="p3"><i class="fa fa-arrow-circle-right"></i></a>
+            <script language="javascript" type="text/javascript" src="assets/js/carroussel.js"></script>
         </div>
-            
-        
-        <div id="p3" class="bckGrnd_W page transition right">
-                 
-          <article><h1 ><span class="sldUp" data-event="#p1 h1 ul li:nth-child(1)">Sites vitrines: Présentation de votre entreprise ou projet. Une mise en page moderne choisie avec vous.<span>
-          </h1></article>
-
-
-           <a class="more" data-action="shrinkText,#p2 article h1,1;fadeIn,#p2 article p,250"><i class="fa fa-plus-circle"></i></a>
-            <a class="back" data-prevPage="p1"><i class="fa fa-arrow-circle-left"></i></a>
-           
-        </div>    
-        <script language="javascript" type="text/javascript" src="assets/js/awesomePrez.js"></script>
 </body>
 
 </html>

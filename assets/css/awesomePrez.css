@@ -194,13 +194,13 @@ h1 ul {margin: .25em 1em;}
 
 #p1 {
   
-    -webkit-filter: grayscale(100%);
-         filter: gray;
-  background: url(moon.jpg) no-repeat center center fixed; 
+    /*-webkit-filter: grayscale(100%);
+         filter: gray;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #000000;
   
   
 }

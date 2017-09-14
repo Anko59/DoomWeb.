@@ -40,3 +40,9 @@ body {
   opacity: 0.5;
   height:100%;
 }
+#siteVitrine {
+  position: relative;
+  margin-left: 30%;
+  margin-top: 35%;
+  width: 20%;
+}

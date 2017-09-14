@@ -125,3 +125,8 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after
     opacity: 1;
     width: 100%;
 }
+@media screen and (max-width: 750px) {
+    div.borderXwidth {
+        display: none;
+    }
+}

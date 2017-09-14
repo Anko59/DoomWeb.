@@ -24,16 +24,6 @@
     <script language="javascript" type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZwlN_6QnUj3F-3DgguB4UuK2jgXEUfeQ&callback=initialize"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 
-    <nav>
-        <div class="cont indigo borderXwidth">
-            <a>Accueil</a>
-            <a>Nos Réalisations</a>
-            <a>Nos Offres</a>
-            <a>L'Équipe</a>
-            <a>Nous Contacter</a>
-        </div>
-    </nav>
-
     <nav class="burger">
         <a href="#" class="burger__button" id="burger-button">
             <span class="burger__button__icon"></span>
@@ -46,6 +36,15 @@
             <li><a href="#">Nous Contacter</a></li>
         </ul>
     </nav>
+     <nav>
+        <div class="cont indigo borderXwidth">
+            <a>Accueil</a>
+            <a>Nos Réalisations</a>
+            <a>Nos Offres</a>
+            <a>L'Équipe</a>
+            <a>Nous Contacter</a>
+        </div>
+    </nav>
     <script language="javascript" type="text/javascript" src="assets/js/burgerMenu.js"></script>
 </head>
 
@@ -56,30 +55,8 @@
         <div class="stars1"></div>
         <div class="stars2"></div>
         <div class="shooting-stars"></div>
-      </div>
-        <div class='animation-text'>
-            <svg viewbox="0 0 100 20">
-              <defs>
-                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="5%" stop-color="#2c3e50"/>
-                  <stop offset="95%" stop-color="#2980b9"/>
-                </linearGradient>
-                <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                  <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
-                    <animateTransform
-                        attributeName="transform"
-                        begin="0s"
-                        dur="1.5s"
-                        type="translate"
-                        from="0,0"
-                        to="40,0"
-                        repeatCount="indefinite" />
-                  </path>
-                </pattern>
-              </defs>
-              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.8">DoomWeb</text>
-              <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.5">DoomWeb</text>
-            </svg>
+        </div class='img_container'>
+            <img src="assets/css/Logo.jpg" alt="Mountain View" class='img_displayer'>
         </div>
         <p class="line-1 anim-typewriter">Des sites Web modernes à un prix abordable</p>
 

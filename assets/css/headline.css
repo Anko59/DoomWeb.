@@ -1,6 +1,4 @@
-body, html {
-  height:100%;
-}
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
 
 .headline {
   display:block;
@@ -53,17 +51,21 @@ body, html {
 }
 
 #nosOffres{
-  font-size: 150px;
+  font-size: 70px;
   line-height: 1em;
   margin-bottom:18px;
   color: #ffffff;
   text-transform:uppercase;
+  font-family: 'Libre Franklin', sans-serif;
+  opacity: 1;
 }
 
 #slidez{
-  font-size: 80px;
+  font-size: 45px;
   text-transform:uppercase;
   color: #ffffff;
   letter-spacing:2px;
   margin:none;
+  font-family: 'Libre Franklin', sans-serif;
+  opacity: 1;
 }

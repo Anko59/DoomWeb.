@@ -1,10 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
-
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
   overflow: hidden;
 }
-
+html {
+  overflow: hidden;
+}
 .animation-background {
   position: absolute;
   top: 0px;
@@ -24,6 +26,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  display: none;
 }
 .img_container{
   position: absolute;
@@ -46,3 +49,61 @@ body {
   margin-top: 35%;
   width: 20%;
 }
+
+.shownOnScroll {
+  display: none;
+}
+.borderXwidth {
+  display: none;
+}
+#subnav {
+  display: none;
+  font-size: 120%;
+}
+.nav {
+  display: none;
+}
+#actcare {
+}
+.realImg {
+  position: absolute;
+  max-width: 30%;
+  left:10%;
+  max-height:20%;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 25px;
+
+}
+#actLogo{
+  top: 5%;
+}
+#actTxt {
+  top: 5%;
+}
+#elliLogo{
+  top: 43%;
+  left: 15% !important;
+}
+#elliTxt {
+  top: 40%;
+}
+.realText {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  right:10%;
+  max-width: 50%;
+  text-align: center;
+  max-height: 100%;
+  border-radius:25px;
+  font-size: 130%;
+  color:#fff;
+  font-weight: 1000;
+}
+#contact-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+

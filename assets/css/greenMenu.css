@@ -99,7 +99,7 @@ div.cont a
 /* Border X get width  */
 div.borderXwidth a:before, div.borderXwidth a:after
 {
-    position: absolute;
+    position: static;
     opacity: 0;
     width: 0%;
     height: 2px;

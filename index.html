@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="assets/css/underline.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='assets/css/yellowCntct.css' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="initial-scale=1">  
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="initial-scale=1">
 
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
@@ -27,7 +28,7 @@
 <body style = 'background-color:rgb(0,0,0);'>
         <div id ='carousselContainer'>
             <ul id="caroussel">
-                <li class="active"><span class="lien">Acceuil</span>
+                <li class="active"><span class="lien">Accueil</span>
                     <div class="starDisplay">
                           <div class="sky">
                             <div class="stars"></div>
@@ -43,7 +44,7 @@
                                       <stop offset="100%" stop-color="#000000"/>
                                     </linearGradient>
                                     <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
-                                      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                                      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
                                         <animateTransform
                                             attributeName="transform"
                                             begin="0s"
@@ -62,26 +63,10 @@
                             <p class="line-1 anim-typewriter">Des sites Web modernes à un prix abordable</p>
                         </div>
                 </li>
-                <li class = "notMain" style="background-color: rgb(0,0,0);"><span class="lien">Nos Offres</span>
-                    <div class="headline">
-                        <div class="bg"> </div>
-                        <div class="overlay"></div>
-                        <div class="cheapwrap">
-                            <table class="cheaptricks">
-                            <tbody>
-                                <tr>
-                                <td>
-                                    <h1 id='nosOffres'>Vous avez besoin d'un site web ?</h1>
-                                    <p id='slidez'>Vous êtes au bon endroit</p>
-                                </td>
-                                </tr>
-                            </tbody>
-                            </table>
-                        </div>
 
-                    </div>
-                </li>
                 <li class = "notMain" style="background: url(assets/css/sun.jpg) center center no-repeat;"><span class="lien">Nos réalisations</span>
+                    <div class="container">
+                      <div class="row">
                     <div id='actcare'>
                         <img class='realImg' id = 'actLogo' src='assets/img/actandcare.png'/>
                         <div class='realText' id='actTxt'>
@@ -89,23 +74,31 @@
                             <p> Act&Care, entreprise de mise en relation médicale à Paris avait besoin d'un site web pour basculer son activité en ligne: mettre en relation des médecins et des centres hospitaliers</p>
                         </div>
                     </div>
+                  </div>
+                  <div class="row">
                     <div id='ellipsis'>
-                        <img class='realImg' id='elliLogo' src='assets/img/logo.png'/>
+
                         <div class='realText' id='elliTxt'>
+                          <div class="col-lg-3">
+                          <img class="logoCLient" id='elliLogo' src='assets/img/logo.png'/>
+                        </div>
+                        <div class="col-lg-9">
                             <h1 style='text-align:center;'>Site Web d'Ellipsis Archi</h1>
                             <p>Ellipsis Architecture, cabinet d'Architectes A Villeneuve d'Ascq avait besoin de refondre son site web pour mieux présenter ses travaux.</p>
+                          </div>
                         </div>
                     </div>
-
-                </li> 
+</div>
+</div>
+                </li>
                 <li class = "notMain" style="background: url(assets/css/galaxy.jpg) center center no-repeat;"><span class="lien">Notre Equipe</span>
                         <div class="container">
                             <div class="row">
                                 <h1 class="title">
                           L'équipe Doomweb<br />
                         </h1>
-                                <div class="col-sm-10 col-sm-offset-1">
-                                    <div class="col-md-4 col-sm-6">
+                                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="card-container">
                                             <div class="card">
                                                 <div class="front">
@@ -155,7 +148,7 @@
                                         Compétences
                                       </h4>
                                                             <p>
-                                                                NodeJs, javascript, HTML5, CSS3, Bootstrap, Jquery 
+                                                                NodeJs, javascript, HTML5, CSS3, Bootstrap, Jquery
                                                             </p>
                                                         </div>
                                                     </div>
@@ -173,7 +166,7 @@
                                         <!--end card-container-->
                                     </div>
                                     <!--end col-md-4 col-sm-6-->
-                                    <div class="col-md-4 col-sm-6">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="card-container">
                                             <div class="card">
                                                 <div class="front">
@@ -240,7 +233,7 @@
                                         <!--end card-container-->
                                     </div>
                                     <!--end col sm 3-->
-                                    <div class="col-md-4 col-sm-6">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
                                         <div class="card-container">
                                             <div class="card">
                                                 <div class="front">
@@ -338,7 +331,7 @@
                       </p>
                     </form>
 
-                </li> 
+                </li>
             </ul>
 
             <div id="subnav"></div>

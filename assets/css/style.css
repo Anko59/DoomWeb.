@@ -21,8 +21,7 @@ font-size: 1.2em;
 }
 body {
   overflow-x: hidden;
-    width: 100vw;
-    height: 100vw;
+  
     display: block;
 }
 .achievements-box{

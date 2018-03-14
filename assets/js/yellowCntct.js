@@ -66,3 +66,21 @@ console.clear();
   }
   
 })();
+$('#boutton').on('click', function(){
+  var content = $('#your-message').val();
+  var nom = $('#your-name').val();
+  var mail = $('#email').val();
+  data = {
+    content:content,
+    nom:nom,
+    mail:mail
+  }
+  console.log(content);
+  $.ajax({
+    type: "POST",
+    url: '/mail.php',
+    data: data,
+    success: success,
+    dataType: dataType
+  });
+});

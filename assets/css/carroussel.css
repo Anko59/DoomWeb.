@@ -46,11 +46,11 @@ body {
 
 #caroussel {
   position: static;
+  padding: 0;
 }
 #caroussel li {
   position: absolute;
-  top: 0;
-  left: 0;
+  list-style: none;
   height: 100%;
   width: 100%;
   text-align: center;

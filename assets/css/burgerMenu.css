@@ -1,35 +1,12 @@
-* {
-  box-sizing: border-box;
-}
-body.open {
-  overflow: hidden;
-}
-body.open:before {
-  visibility: visible;
-  opacity: 1;
-}
-body:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.4s ease;
-}
 .burger {
-  display: inline;
   z-index: 10;
   position: fixed;
   top: 20px;
   left: 20px;
 }
 .burger__button {
+  display:block;
   z-index: 10;
-  display: block;
   position: relative;
   background: #2196f3;
   width: 50px;
@@ -46,7 +23,6 @@ body:before {
   box-shadow: none;
 }
 .burger__button__icon {
-  display: inline-block;
   position: absolute;
   background: #fff;
   margin: 0 auto;
@@ -103,6 +79,7 @@ body:before {
   transform: translateX(-400px);
 }
 .burger__menu a {
+  text-align: left;
   display: block;
   text-decoration: none;
   color: #fff;
@@ -120,4 +97,15 @@ body:before {
 .burger__button.open + .burger__menu li {
   transform: translateX(0);
   visibility: visible;
+}
+@media screen and (max-width: 750px) {
+    .burger {
+        display: inline;
+    }
+    .burger__button {
+      display: block;
+    }
+    .burger__button__icon {
+      display: inline;
+    }
 }

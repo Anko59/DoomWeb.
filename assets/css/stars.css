@@ -7,6 +7,11 @@ html body {
   margin: 0;
 }
 
+#carousselContainer{
+
+  height:inherit;
+}
+
 .starDisplay {
   margin-top: -20px;
   display: block;
